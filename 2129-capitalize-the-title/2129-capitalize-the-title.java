@@ -15,3 +15,30 @@ class Solution {
         
     }
 }
+
+
+
+// class Solution {
+//     public String capitalizeTitle(String title) {
+//         title = title.toLowerCase();
+
+//         String[] arr = title.split(" ");
+//         StringBuilder result = new StringBuilder();
+//         int n = arr.length;
+
+//         for(String s: arr){
+//             if(s.length() <= 2){
+//                 result.append(s);
+//             }
+//             else{
+//                 result.append(s.substring(0,1).toUpperCase()).append(s.substring(1));
+//             }
+            
+//             if(n > 1){
+//                 result.append(" ");
+//             }
+//             n--;
+//         }
+//         return result.toString();
+//     }
+// }
