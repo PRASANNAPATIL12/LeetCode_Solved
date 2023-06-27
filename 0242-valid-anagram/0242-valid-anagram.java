@@ -17,26 +17,49 @@ class Solution {
         // }
 
         // return true;
-        // if(s.length()!=t.length())return false;
+        if(s.length()!=t.length())return false;
         
 
-        // char p[]=s.toCharArray();
-        // char q[]=t.toCharArray();
-        // Arrays.sort(p);Arrays.sort(q);
-        // int n=Math.min(p.length,q.length);
-        // try{
-        //     for(int i=0;i<n;i++){
-        //     if(p[i]!=q[i])return false;
-        // }
-        // }
-        // catch(Exception e){
-        //     return false;
-        // }
+        char p[]=s.toCharArray();
+        char q[]=t.toCharArray();
+        Arrays.sort(p);Arrays.sort(q);
+        int n=Math.min(p.length,q.length);
+        try{
+            for(int i=0;i<n;i++){
+            if(p[i]!=q[i])return false;
+        }
+        }
+        catch(Exception e){
+            return false;
+        }
         
+        return true;
+
+
+        //  int[] freq = new int[26];
+        // char[] sca = s.toCharArray();
+        // char[] tca = t.toCharArray();
+
+        // for(char c: sca){
+        //     int index = c - 'a';
+        //     freq[index]++;
+        // }
+        // // String freqS = String.valueOf(freq);
+        
+        // // freq = new int[26];
+        // for(char c: tca){
+        //     int index = c - 'a';
+        //     freq[index]--;
+        // }
+
+        // for(int n: freq){
+        //     if(n!=0){
+        //         return false;
+        //     }
+        // }
+
         // return true;
 
-
-        
 
 
 
