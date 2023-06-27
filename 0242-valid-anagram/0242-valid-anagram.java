@@ -17,25 +17,26 @@ class Solution {
         // }
 
         // return true;
-        if(s.length()!=t.length())return false;
+        // if(s.length()!=t.length())return false;
         
 
-        char p[]=s.toCharArray();
-        char q[]=t.toCharArray();
-        Arrays.sort(p);Arrays.sort(q);
-        int n=Math.min(p.length,q.length);
-        try{
-            for(int i=0;i<n;i++){
-            if(p[i]!=q[i])return false;
-        }
-        }
-        catch(Exception e){
-            return false;
-        }
+        // char p[]=s.toCharArray();
+        // char q[]=t.toCharArray();
+        // Arrays.sort(p);Arrays.sort(q);
+        // int n=Math.min(p.length,q.length);
+        // try{
+        //     for(int i=0;i<n;i++){
+        //     if(p[i]!=q[i])return false;
+        // }
+        // }
+        // catch(Exception e){
+        //     return false;
+        // }
         
-        return true;
+        // return true;
 
 
+        
 
 
 
