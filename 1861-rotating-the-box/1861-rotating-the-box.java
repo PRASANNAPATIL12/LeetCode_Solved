@@ -7,11 +7,16 @@ class Solution {
     public  char[][] rotate(char[][] box){
         int m=box.length,n=box[0].length;
         char[][]res=new char[n][m];
-        for(int i=0,c=m-1;i<m;c--,i++){
-            for(int j=0,r=0;j<n;r++,j++){
-                res[r][c]=box[i][j];
+          for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                res[j][i]=box[m-1-i][j];
             }
         }
+        // for(int i=0,c=m-1;i<m;c--,i++){
+        //     for(int j=0,r=0;j<n;r++,j++){
+        //         res[r][c]=box[i][j];
+        //     }
+        // }
         return res;
     }
     public  void fall(char[][] box){
