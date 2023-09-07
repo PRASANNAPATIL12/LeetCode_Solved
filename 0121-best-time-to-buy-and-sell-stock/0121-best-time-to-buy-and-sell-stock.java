@@ -4,8 +4,8 @@ class Solution {
         int min=prices[0];
         for(int i=1;i<prices.length;i++){
             
-            p=Math.max(p,prices[i]-min);
             min=Math.min(min,prices[i]);
+            p=Math.max(p,prices[i]-min);
             
           
         }
