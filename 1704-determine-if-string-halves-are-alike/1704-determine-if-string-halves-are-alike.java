@@ -1,3 +1,25 @@
+// class Solution {
+//     public boolean halvesAreAlike(String s) {
+//         s.toLowerCase();
+//        Set<Character> vowels=new HashSet <>(Set.of('a','e','i','o','u'));
+//       String a=s.substring(0,s.length()/2);
+//        String b=s.substring(s.length()/2);
+//         return check(a,vowels)==check(b,vowels);
+//     }
+//     public static int check(String a,Set<Character> vowels){
+//         int c=0;
+//         for(char ch:a.toCharArray()){
+//             if(vowels.contains(ch))
+//                 c++;
+//         }
+//         return c;
+        
+//     }
+// }
+
+
+
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,6 +49,9 @@ public class Solution {
         return count;
     }
 }
+
+
+
 
 
 
